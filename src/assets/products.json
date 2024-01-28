@@ -1,0 +1,204 @@
+{
+    "products": [
+        {
+            "id": "e1552b727dba",
+            "name": "Nike Everyday Plus Cushioned",
+            "description": "Training Ankle Socks (3 Pairs)",
+            "colors": "5",
+            "price": "22",
+            "oldPrice": "",
+            "discount": "",
+            "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2d116240-77c8-4f5b-91f9-f44d8b6f347f/everyday-plus-cushioned-training-ankle-socks-3-pairs-QrMX1x.png"
+        },
+        {
+            "id": "0a08bbaa8469",
+            "name": "Nike Form",
+            "description": "Men's Dri-FIT Versatile Jacket",
+            "colors": "5 ",
+            "price": "70",
+            "oldPrice": "",
+            "discount": "",
+            "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6f069c19-290b-4cf6-85ae-51fd7a83d83f/form-mens-dri-fit-versatile-jacket-qSsBth.png"
+        },
+        {
+            "id": "15846e1e2306",
+            "name": "Nike Unlimited ",
+            "description": "Men's Dri-FIT Zippered Cuff Versatile Pants",
+            "colors": "1 ",
+            "price": "80 ",
+            "oldPrice": "",
+            "discount": "",
+            "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/cb14e24c-b169-4e04-80e7-bead4bfc2215/unlimited-mens-dri-fit-zippered-cuff-versatile-pants-HVWsGC.png"
+        },
+        {
+            "id": "f201d80c08ba",
+            "name": "Nike Air Zoom TR 1",
+            "description": "Men's Workout Shoes",
+            "colors": "8",
+            "price": "130",
+            "oldPrice": "",
+            "discount": "",
+            "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/078906e5-9d8f-44cd-ab0d-4e5f3234757a/air-zoom-tr-1-mens-workout-shoes-CM5Cn6.png"
+        },
+        {
+            "id": "351c440e92da",
+            "name": "Nike Pegasus 40",
+            "description": "Men's Road Running Shoes",
+            "colors": "12",
+            "price": "130",
+            "oldPrice": "",
+            "discount": "",
+            "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/9e62797a-8512-4024-a110-d21a4d02f73b/pegasus-40-mens-road-running-shoes-zD8H1c.png"
+        },
+        {
+            "id": "456eba35a666",
+            "name": "Nike Yoga",
+            "description": "Men's Dri-FIT Crew Top",
+            "colors": "4",
+            "price": "85",
+            "oldPrice": "",
+            "discount": "",
+            "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/0a62120f-2792-4cfc-9508-f6601bc99921/yoga-mens-dri-fit-crew-top-mwfmwj.png"
+        },
+        {
+            "id": "4f7877942766",
+            "name": "Nike Yoga",
+            "description": "Men's Dri-FIT Joggers",
+            "colorss": "4",
+            "price": "75",
+            "oldPrice": "",
+            "discount": "",
+            "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f0b213fa-b25e-4785-8fca-aa8ccf1f256c/yoga-mens-dri-fit-joggers-D3GsQx.png"
+        },
+        {
+            "id": "faad428b8c03",
+            "name": "Nike Interact Run",
+            "description": "Men's Road Running Shoes",
+            "colorss": "4",
+            "price": "85",
+            "oldPrice": "",
+            "discount": "",
+            "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b9542e6b-db03-4ef3-8df5-7eb07de98020/interact-run-mens-road-running-shoes-2pmmcR.png"
+        },
+        {
+            "id": "3a28002363da",
+            "name": "Nike Therma-FIT ADV Running Division",
+            "description": "Men's Long-Sleeve Running Top",
+            "colorss": "3",
+            "oldPrice": "100",
+            "price": "60.97",
+            "discount": "39",
+            "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/149bca2a-c1bd-4265-8d15-053dc993f6bd/therma-fit-adv-running-division-mens-long-sleeve-running-top-dJ9KlX.png"
+        },
+        {
+            "id": "c12f43774e70",
+            "name": "Nike Running Division Phenom ",
+            "description": "Men's Storm-FIT Running Pants ",
+            "colors": "1",
+            "oldPrice": "145",
+            "price": "59.97",
+            "discount": "58",
+            "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/20516b6b-e641-4f39-8cd2-728136f3f204/running-division-phenom-mens-storm-fit-running-pants-Vwrzmp.png"
+        },
+        {
+            "id": "90d63bb89dfa",
+            "name": "Nike",
+            "description": "Training Mat 2.0",
+            "colors": "1",
+            "oldPrice": "75",
+            "price": "44.97",
+            "discount": "40",
+            "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7779e6d9-7432-4668-8cd1-0e99e7a34479/training-mat-2-72NdDg.png"
+        },
+        {
+            "id": "14db3e39043d",
+            "name": "Nike 32oz Big Mouth",
+            "description": "Water Bottle",
+            "colors": "1",
+            "price": "14",
+            "oldPrice": "",
+            "discount": "",
+            "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/5afe20c2-b99a-4856-adc7-b88973434252/32oz-big-mouth-water-bottle-1kn8d6.png"
+        },
+        {
+            "id": "189490c8f87b",
+            "name": "Nike Free Metcon 5 (Team)",
+            "description": "Men's Workout Shoes",
+            "colorss": "5",
+            "oldPrice": "120",
+            "price": "102.97",
+            "discount": "14",
+            "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/4632ef76-55e1-4190-a2fa-b9b5f0d27bca/free-metcon-5-team-mens-workout-shoes-H0Qszz.png"
+        },
+        {
+            "id": "189490c8f87b",
+            "name": "Nike Metcon 9 AMP",
+            "description": "Men's Workout Shoes",
+            "colors": "1",
+            "price": "160",
+            "oldPrice": "",
+            "discount": "",
+            "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/cdf97425-ae6d-4da5-8603-48b07fa002f0/metcon-9-amp-mens-workout-shoes-qFBS2f.png"
+        },
+        {
+            "id": "a1894b8dc6ca",
+            "name": "Nike Unlimited",
+            "description": "Men's Dri-FIT 5Unlined Versatile Shorts",
+            "colorss": "13",
+            "price": "60",
+            "oldPrice": "",
+            "discount": "",
+            "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b982a5d8-8e9b-4881-b9c5-53d7380abb6a/unlimited-mens-dri-fit-5-unlined-versatile-shorts-nlD0tf.png"
+        },
+        {
+            "id": "e7d0b8501ee0",
+            "name": "Nike Primary",
+            "description": "Men's Dri-FIT Short-Sleeve Versatile Top",
+            "colorss": "5",
+            "price": "55",
+            "oldPrice": "",
+            "discount": "",
+            "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/03c63dea-0116-4bb4-9718-fa3f7230052f/primary-mens-dri-fit-short-sleeve-versatile-top-XK77j1.png"
+        },
+        {
+            "id": "c7e20540bb7d",
+            "name": "Nike",
+            "description": "Recovery Ball",
+            "colors": "1",
+            "price": "30",
+            "oldPrice": "",
+            "discount": "",
+            "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/bf0da4b7-87ac-4da7-b15f-5d8c5bd38e11/recovery-ball-ZpXWFx.png"
+        },
+        {
+            "id": "j848fa3e8f6d",
+            "name": "Nike",
+            "description": "Pocket Arm Band Plus",
+            "colors": "1",
+            "oldPrice": "35",
+            "price": "29.97",
+            "discount": "14",
+            "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b4120f62-d02b-419c-8543-62100bbeb114/pocket-arm-band-plus-8kZwkQ.png"
+        },
+        {
+            "id": "tg48fa3e8f6d",
+            "name": "Nike Sportswear Tech Fleece",
+            "description": "Men's Bomber Jacket",
+            "colors": "4",
+            "oldPrice": "",
+            "price": "150",
+            "discount": "",
+            "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b837f7d1-8450-441c-a22c-b6ab1eb6a130/sportswear-tech-fleece-mens-bomber-jacket-rXx6mF.png"
+        },
+        {
+            "id": "d548fgte8f6d",
+            "name": "Nike InfinityRN 4 GORE-TEX",
+            "description": "Men's Waterproof Road Running Shoes",
+            "colors": "3",
+            "oldPrice": "",
+            "price": "180",
+            "discount": "",
+            "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/91e44e83-f4e5-41af-83af-262b59e4e089/infinityrn-4-gore-tex-mens-waterproof-road-running-shoes-nPh2bZ.png"
+        }
+    ]
+}

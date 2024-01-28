@@ -1,0 +1,43 @@
+<nav class="d-none d-lg-flex justify-content-between align-items-center">
+
+    <!-- Jordan & Converse logos -->
+    <section>
+        <a routerLink="">
+            <img src="/assets/images/Jordan.png" width="20" alt="Jordan">
+        </a>
+        <a routerLink="">
+            <img src="/assets/images/Converse.png" width="23" alt="Converse">
+        </a>
+    </section>
+
+    <!-- Links -->
+    <section>
+        <ul class="d-flex justify-content-between align-items-center">
+
+            <li class="links-li">
+                <a class="links" routerLink="">Find a Store</a>
+            </li>
+
+            <li class="links-li">
+                <a class="links" routerLink="" (mouseenter)="handleEnter()">Help</a>
+            </li>
+            <!-- Help Tooltip -->
+            <ul class="help-tooltip" *ngIf="isEnter" (mouseleave)="handleLeave()">
+                <p class="help-text">Help</p>
+                <!-- Dynamic Help Links -->
+                <li *ngFor="let link of helpLinks" class="help-li">
+                    <a class="help-link" routerLink="">{{link}}</a>
+                </li>
+            </ul>
+
+            <li class="links-li">
+                <a class="links" routerLink="">Join Us</a>
+            </li>
+
+            <li class="links-li">
+                <a class="links" routerLink="">Sign In</a>
+            </li>
+        </ul>
+    </section>
+
+</nav>

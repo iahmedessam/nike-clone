@@ -1,0 +1,28 @@
+<main class="justify-content-between align-items-center d-none d-lg-flex">
+
+    <p>Mens Fitness (102)</p>
+
+    <div class="d-flex">
+        <!-- Hide Filters Button -->
+        <button type="button" (click)="handleFilter()">Hide Filters
+            <svg class="svg" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+                <g>
+                    <path
+                        d="m10.241 30.944h70.401v8.223c0 2.209 1.791 4 4 4h17.651c2.209 0 4-1.791 4-4v-8.223h11.465c2.209 0 4-1.791 4-4s-1.791-4-4-4h-11.465v-8.222c0-2.209-1.791-4-4-4h-17.65c-2.209 0-4 1.791-4 4v8.222h-70.402c-2.209 0-4 1.791-4 4s1.791 4 4 4zm78.402-12.221h9.651v16.444h-9.651z" />
+                    <path
+                        d="m117.759 60h-70.4v-8.223c0-2.209-1.791-4-4-4h-17.651c-2.209 0-4 1.791-4 4v8.223h-11.467c-2.209 0-4 1.791-4 4s1.791 4 4 4h11.467v8.222c0 2.209 1.791 4 4 4h17.651c2.209 0 4-1.791 4-4v-8.222h70.399c2.209 0 4-1.791 4-4s-1.79-4-3.999-4zm-78.4 12.222h-9.651v-16.445h9.651z" />
+                    <path
+                        d="m117.759 97.055h-11.465v-8.222c0-2.209-1.791-4-4-4h-17.651c-2.209 0-4 1.791-4 4v8.222h-70.402c-2.209 0-4 1.791-4 4s1.791 4 4 4h70.401v8.223c0 2.209 1.791 4 4 4h17.651c2.209 0 4-1.791 4-4v-8.223h11.465c2.209 0 4-1.791 4-4s-1.79-4-3.999-4zm-29.116 12.222v-16.444h9.651v16.444z" />
+                </g>
+            </svg>
+        </button>
+        <!-- Sort Button -->
+        <button type="button" (click)="handleSort()">Sort By
+            <span [ngClass]="{'arrowTop': isSorted, 'arrowBottom': !isSorted}"></span>
+            <div *ngIf="isSorted" class="sort-tooltip">
+                <button *ngFor="let item of sort" type="button" class="button-tooltip">{{item}}</button>
+            </div>
+        </button>
+    </div>
+
+</main>

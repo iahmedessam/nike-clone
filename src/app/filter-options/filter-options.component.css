@@ -1,0 +1,123 @@
+.filter-section {
+    height: 500px;
+    width: 230px;
+    margin-right: 50px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: sticky;
+    top: 15%;
+}
+
+a {
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    color: (var(--black));
+    margin-bottom: 10px;
+}
+
+hr {
+    width: 200px;
+    opacity: 0.1;
+}
+
+P {
+    font-weight: bold;
+    margin: 0 15px 0 0;
+}
+
+button {
+    border: none;
+    background-color: var(--white);
+}
+
+span {
+    display: block;
+}
+
+.categories {
+    padding-left: 5px;
+}
+
+.arrowTop {
+    background-color: var(--white);
+    position: relative;
+    top: -5px;
+    left: -14px;
+    width: 9px;
+    height: 9px;
+    border: solid 2px black;
+    border-left: transparent;
+    border-bottom: transparent;
+    transform: rotate(-45deg);
+}
+
+.arrowBottom {
+    background-color: var(--white);
+    position: relative;
+    top: -10px;
+    left: -14px;
+    height: 9px;
+    width: 9px;
+    border: solid 2px black;
+    border-left: transparent;
+    border-bottom: transparent;
+    transform: rotate(135deg);
+}
+
+form {
+    margin-top: 20px;
+}
+
+input {
+    margin-right: 8px;
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+}
+
+label {
+    cursor: pointer;
+}
+
+label:hover {
+    opacity: 0.6
+}
+
+input:checked {
+    accent-color: var(--black);
+}
+
+.color-div {
+    margin: 7px 0 7px 0;
+}
+
+.color-span {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.color-button {
+    font-size: 12px;
+}
+
+.white-border {
+    border: 1px solid var(--grey);
+}
+
+/* Make some changes on scrollbar */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #7f7f7f;
+    border-radius: 6px;
+}

@@ -1,0 +1,153 @@
+<!-- Filter section -->
+<section class="filter-section col-3 d-none d-lg-block" *ngIf="isFilterSectionVisible">
+
+    <!-- Pick up today -->
+    <p>Pick Up Today</p>
+    <hr>
+
+    <!-- Dynamic Categories -->
+    <div class="categories">
+        <a *ngFor='let category of categories' routerLink="">{{category}}</a>
+    </div>
+    <hr>
+
+    <!-- Gender -->
+    <div class="d-flex justify-content-between align-items-center">
+        <p>Gender</p>
+        <button type="button" (click)="handleOpen('gender')">
+            <span [ngClass]="{'arrowTop': isOpenGender, 'arrowBottom': !isOpenGender}"></span>
+        </button>
+    </div>
+    <form *ngIf="isOpenGender">
+        <div *ngFor="let type of gender; let i = index">
+            <input type="checkbox" [id]="type" [checked]="i === 0">
+            <label [htmlFor]="type">{{type}}</label>
+        </div>
+    </form>
+    <hr>
+
+    <!-- Shop by price -->
+    <div class="d-flex justify-content-between align-items-center">
+        <P>Shop By Price</P>
+        <button type="button" (click)="handleOpen('shopByPrice')">
+            <span [ngClass]="{'arrowTop': isOpenShopByPrice, 'arrowBottom': !isOpenShopByPrice}"></span>
+        </button>
+    </div>
+    <form *ngIf="isOpenShopByPrice">
+        <div *ngFor="let price of prices">
+            <input type="checkbox" [id]="price">
+            <label [htmlFor]="price">{{price}}</label>
+        </div>
+        <div *ngIf="pricesMoreOpen">
+            <div *ngFor="let price of pricesMore">
+                <input type="checkbox" [id]="price">
+                <label [htmlFor]="price">{{price}}</label>
+            </div>
+        </div>
+        <button type="button" *ngIf="!pricesMoreOpen" (click)="handleMorePrices()">+ More</button>
+        <button type="button" *ngIf="pricesMoreOpen" (click)="handleLessPrices()">- less</button>
+    </form>
+    <hr>
+
+    <!-- Products & Discount -->
+    <div class="d-flex justify-content-between align-items-center">
+        <P>Products Discount</P>
+        <button type="button" (click)="handleOpen('productsDiscount')">
+            <span [ngClass]="{'arrowTop': isOpenProductsDiscount, 'arrowBottom': !isOpenProductsDiscount}"></span>
+        </button>
+    </div>
+    <form *ngIf="isOpenProductsDiscount">
+        <div *ngFor="let discount of discounts">
+            <input type="checkbox" [id]="discount">
+            <label [htmlFor]="dicount">{{discount}}</label>
+        </div>
+    </form>
+    <hr>
+
+    <!-- Color -->
+    <div class="d-flex justify-content-between align-items-center">
+        <P>Color</P>
+        <button type="button" (click)="handleOpen('color')">
+            <span [ngClass]="{'arrowTop': isOpenColor, 'arrowBottom': !isOpenColor}"></span>
+        </button>
+    </div>
+    <form *ngIf="isOpenProductsDiscount" class="row">
+        <div class="col-4" *ngFor="let color of colors">
+            <div class="color-div d-flex flex-wrap justify-content-center align-items-center">
+                <span class="color-span" [style.background-color]="color"
+                    [ngClass]="{'white-border': color === 'White'}"></span>
+                <button class="color-button">{{color}}</button>
+            </div>
+        </div>
+    </form>
+    <hr>
+
+    <!-- Material -->
+    <div class="d-flex justify-content-between align-items-center">
+        <P>Material</P>
+        <button type="button" (click)="handleOpen('material')">
+            <span [ngClass]="{'arrowTop': isOpenMaterial, 'arrowBottom': !isOpenMaterial}"></span>
+        </button>
+    </div>
+    <form *ngIf="isOpenMaterial">
+        <div *ngFor="let material of materials">
+            <input type="checkbox" [id]="material">
+            <label [htmlFor]="material">{{material}}</label>
+        </div>
+    </form>
+    <hr>
+
+    <!-- Brand -->
+    <div class="d-flex justify-content-between align-items-center">
+        <P>Brand</P>
+        <button type="button" (click)="handleOpen('brand')">
+            <span [ngClass]="{'arrowTop': isOpenBrand, 'arrowBottom': !isOpenBrand}"></span>
+        </button>
+    </div>
+    <form *ngIf="isOpenBrand">
+        <div *ngFor="let brand of brands">
+            <input type="checkbox" [id]="brand">
+            <label [htmlFor]="brand">{{brand}}</label>
+        </div>
+    </form>
+    <hr>
+
+    <!-- Sports & Activity -->
+    <div class="d-flex justify-content-between align-items-center">
+        <P>Sports & Activity</P>
+        <button type="button" (click)="handleOpen('sportsActivity')">
+            <span [ngClass]="{'arrowTop': isOpenSportsActivity, 'arrowBottom': !isOpenSportsActivity}"></span>
+        </button>
+    </div>
+    <form *ngIf="isOpenSportsActivity">
+        <div *ngFor="let sport of sports">
+            <input type="checkbox" [id]="sport">
+            <label [htmlFor]="sport">{{sport}}</label>
+        </div>
+        <div *ngIf="sportsMoreOpen">
+            <div *ngFor="let sport of sportsMore">
+                <input type="checkbox" [id]="sport">
+                <label [htmlFor]="sport">{{sport}}</label>
+            </div>
+        </div>
+        <button type="button" *ngIf="!sportsMoreOpen" (click)="handleMoreSports()">+ More</button>
+        <button type="button" *ngIf="sportsMoreOpen" (click)="handleLessSports()">- less</button>
+    </form>
+    <hr>
+
+    <!-- Best For -->
+    <div class="d-flex justify-content-between align-items-center">
+        <P>Best For</P>
+        <button type="button" (click)="handleOpen('bestFor')">
+            <span [ngClass]="{'arrowTop': isOpenBestFor, 'arrowBottom': !isOpenBestFor}"></span>
+        </button>
+    </div>
+    <form *ngIf="isOpenBestFor">
+        <div *ngFor="let best of best">
+            <input type="checkbox" [id]="best">
+            <label [htmlFor]="best">{{best}}</label>
+        </div>
+    </form>
+    <hr>
+
+</section>

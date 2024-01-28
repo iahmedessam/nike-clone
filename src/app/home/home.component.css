@@ -1,0 +1,38 @@
+main {
+    padding: 20px 50px;
+}
+
+.products-section {
+    padding: 0 0 0 12px;
+}
+
+.product-card {
+    margin-bottom: 80px;
+    padding: 0 0 0 12px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.product-name {
+    margin-top: 15px;
+}
+
+.product-price,
+.product-old-price,
+.product-discount {
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+.product-description,
+.product-colors,
+.product-old-price {
+    color: var(--grey);
+}
+
+.product-discount {
+    color: #029557;
+}

@@ -1,0 +1,96 @@
+.slider {
+    position: relative;
+    width: 100%;
+    background-color: var(--lightGrey);
+    padding: 17px 0 18PX 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+p {
+    margin: 0 15px 0 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+a {
+    color: var(--black);
+    text-decoration: underline;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.arrowRight {
+    display: block;
+    position: absolute;
+    right: 25%;
+    top: 45%;
+    height: 10px;
+    width: 10px;
+    border: solid 2px black;
+    opacity: 0.3;
+    border-left: transparent;
+    border-bottom: transparent;
+    transform: rotate(45deg);
+    transition: opacity 0.6s;
+}
+
+.arrowLeft {
+    display: block;
+    position: absolute;
+    left: 25%;
+    top: 45%;
+    height: 10px;
+    width: 10px;
+    border: solid 2px var(--black);
+    opacity: 0.3;
+    border-right: transparent;
+    border-top: transparent;
+    transform: rotate(45deg);
+    transition: opacity 0.6s;
+}
+
+.arrowLeft:hover,
+.arrowRight:hover {
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+
+@media only screen and (max-width: 576px) {
+
+    .arrowLeft,
+    .arrowRight {
+        display: none;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    a {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+
+    .arrowLeft {
+        left: 10%;
+    }
+
+    .arrowRight {
+        right: 10%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .arrowLeft {
+        left: 15%;
+    }
+
+    .arrowRight {
+        right: 15%;
+    }
+}

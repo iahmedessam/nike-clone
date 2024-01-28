@@ -1,0 +1,28 @@
+<app-filters (filterClicked)="handleFilterClick()"></app-filters>
+
+<main class="row">
+
+    <section class="sort-section col-3 d-none d-lg-block" *ngIf="isFilterSectionVisible">
+        <app-filter-options></app-filter-options>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section row"
+        [ngClass]="{'col-12': !isFilterSectionVisible, 'col-md-12 col-lg-9': isFilterSectionVisible}">
+
+        <!-- Display products -->
+        <div *ngFor="let product of products" class="product-card col-6 col-lg-4">
+            <img src={{product.image}} alt={{product.name}}>
+            <p class="product-name">{{product.name}} </p>
+            <p class="product-description">{{product.description}} </p>
+            <p class="product-colors" *ngIf="product.colors">{{product.colors}} color</p>
+            <div class="d-flex">
+                <p class="product-price">${{product.price}}</p>
+                <p class="product-old-price" *ngIf="product.oldPrice"><del>${{product.oldPrice}}</del></p>
+            </div>
+            <p class="product-discount" *ngIf="product.discount">{{product.discount}}% off</p>
+        </div>
+
+    </section>
+
+</main>

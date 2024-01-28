@@ -1,0 +1,196 @@
+<nav class="d-flex align-items-center justify-content-between">
+
+    <!-- Logo -->
+    <section>
+        <a routerLink="">
+            <img class="logo" src=" assets/images/logo.png" width="93" alt="logo">
+        </a>
+    </section>
+
+    <!-- Links -->
+    <section class="d-flex align-items-center flex-nowrap">
+        <ul class="links-ul d-flex align-items-center ">
+            <li class="d-none d-lg-block">
+                <a class="links" routerLink="">New & Featured</a>
+            </li>
+            <li class="d-none d-lg-block">
+                <a class="links" routerLink="">Men</a>
+            </li>
+            <li class="d-none d-lg-block">
+                <a class="links" routerLink="">Women</a>
+            </li>
+            <li class="d-none d-lg-block">
+                <a class="links" routerLink="">Kids</a>
+            </li>
+            <li class="d-none d-xl-block">
+                <a class="links" routerLink="">Accessories</a>
+            </li>
+            <li class="d-none d-xl-block">
+                <a class="links" routerLink="">Sale</a>
+            </li>
+        </ul>
+
+        <!-- Search -->
+        <div class="input-with-icon d-none d-lg-block">
+            <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+            <input type="text" placeholder="Search" (input)="handleInput()">
+        </div>
+        
+        <!-- Creating a back drop -->
+        <div class="backdrop" *ngIf="onInput" (click)="handleInput()"></div>
+        <!-- Search Active styling -->
+        <div *ngIf="onInput" class="search-active d-flex justify-content-between ">
+            <div>
+                <a routerLink="">
+                    <img src=" assets/images/logo.png" width="93" alt="logo">
+                </a>
+            </div>
+            <div class="search-active-input-with-icon">
+                <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+                <input type="text" placeholder="Search" class="search-active-input" (input)="handleInput()">
+            </div>
+            <div>
+                <button (click)="handleCancelinput()" class="search-active-button">Cancel</button>
+            </div>
+        </div>
+
+        <!-- Favorite icon -->
+        <div class="favorite d-none d-lg-block">
+            <a routerLink="">
+                <i class="fa-regular fa-heart fa-lg" style="color: #000000;"></i>
+            </a>
+            <p class="favorite-tooltip">Favorites</p>
+        </div>
+        <span></span>
+
+        <!-- Bag items -->
+        <div class="bag d-none d-lg-block">
+            <a routerLink="cart">
+                <i class="fa-solid fa-bag-shopping fa-lg" style="color: #000000;"></i>
+            </a>
+            <p class="bag-tooltip">Bag items: 0</p>
+        </div>
+
+        <!-- Medium Screen icons-->
+        <div class="d-flex align-items-center d-block d-lg-none">
+            <!-- Search -->
+            <a class="md-icons" routerLink="">
+                <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+            </a>
+            <!-- Bag -->
+            <a class="md-icons" routerLink="cart">
+                <i class="fa-solid fa-bag-shopping fa-lg" style="color: #000000;"></i>
+            </a>
+            <!-- Profile -->
+            <a class="md-icons" routerLink="">
+                <i class="fa-regular fa-user fa-lg" style="color: #000000;"></i>
+            </a>
+            <!-- Menu Bar -->
+            <a class="md-icons" routerLink="">
+                <i class=" fa-solid fa-bars fa-lg " style="color: #000000;"
+                    (click)="handleMenubar()"></i>
+            </a>
+        </div>
+
+        <!-- Creating a back drop -->
+        <div class="backdrop" *ngIf="menubarOpen" (click)="handleCancelMenubar()"></div>
+        <!-- Making Menubar Active -->
+        <div class="menubar-drawer" *ngIf="menubarOpen">
+
+            <!-- Cancel Button -->
+            <button type="button" class="menubar-cancel" (click)="handleCancelMenubar()">x</button>
+
+            <!-- New & Featured -->
+            <div class="menubar-link-details d-flex justify-content-between align-items-center">
+                <a class="menubar-link" routerLink="">New & Featured</a>
+                <button type="button">
+                    <span Class="arrowRight"></span>
+                </button>
+            </div>
+            <!-- Men -->
+            <div class="menubar-link-details d-flex justify-content-between align-items-center">
+                <a class="menubar-link" routerLink="">Men</a>
+                <button type="button">
+                    <span Class="arrowRight"></span>
+                </button>
+            </div>
+            <!-- Women -->
+            <div class="menubar-link-details d-flex justify-content-between align-items-center">
+                <a class="menubar-link" routerLink="">Women</a>
+                <button type="button">
+                    <span Class="arrowRight"></span>
+                </button>
+            </div>
+            <!-- Kids -->
+            <div class="menubar-link-details d-flex justify-content-between align-items-center">
+                <a class="menubar-link" routerLink="">Kids</a>
+                <button type="button">
+                    <span Class="arrowRight"></span>
+                </button>
+            </div>
+            <!-- Accessories -->
+            <div class="menubar-link-details d-flex justify-content-between align-items-center">
+                <a class="menubar-link" routerLink="">Accessories</a>
+                <button type="button">
+                    <span Class="arrowRight"></span>
+                </button>
+            </div>
+            <!-- Sale -->
+            <div class="menubar-link-details d-flex justify-content-between align-items-center">
+                <a class="menubar-link" routerLink="">Sale</a>
+                <button type="button">
+                    <span Class="arrowRight"></span>
+                </button>
+            </div>
+
+            <!-- Jordan -->
+            <div class="menubar-logos">
+                <div class="d-flex">
+                    <a routerLink="">
+                        <img src="/assets/images/Jordan.png" width="20" alt="Jordan">
+                    </a>
+                    <p>Jordan</p>
+                </div>
+                <!-- Converse -->
+                <div class="d-flex">
+                    <a routerLink="">
+                        <img src="/assets/images/Converse.png" width="23" alt="Converse">
+                    </a>
+                    <p>Converse</p>
+                </div>
+            </div>
+
+            <!-- Become a member -->
+            <p class="menubar-text">
+                Become a Nike Member for the best products, inspiration and stories in sport.
+                <a class="menubar-learn-more" routerLink="">Learn more</a>
+            </p>
+
+            <!-- Join us & Sign in -->
+            <a class="menubar-join-us" routerLink="">Join Us</a>
+            <a class="menubar-sign-in" routerLink="">Sign In</a>
+
+            <!-- icons -->
+            <div class="menubar-icons">
+                <div class="menubar-icons-items d-flex align-items-center">
+                    <i class="fa-solid fa-bag-shopping fa-lg" style="color: #000000;"></i>
+                    <a routerLink="cart" class="menubar-text-icon">Bag</a>
+                </div>
+                <div class="menubar-icons-items d-flex align-items-center">
+                    <i class="fa-solid fa-box fa-lg" style="color: #000000;"></i>
+                    <a routerLink="" class="menubar-text-icon">Orders</a>
+                </div>
+                <div class="menubar-icons-items d-flex align-items-center">
+                    <i class="fa-solid fa-store" style="color: #000000;"></i>
+                    <a routerLink="" class="menubar-text-icon">Find a Store</a>
+                </div>
+                <div class="menubar-icons-itemsd-flex align-items-center">
+                    <i class="fa-regular fa-circle-question fa-lg" style="color: #000000;"></i>
+                    <a routerLink="" class="menubar-text-icon">Help</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+</nav>

@@ -1,1 +1,40 @@
-/* You can add global styles to this file, and also import other style files */
+@import '@fortawesome/fontawesome-free/css/all.css';
+
+@font-face {
+    font-family: 'Futura';
+    src: local('Futura-Bold'), url('./assets/fonts/Helvetica-Font/Helvetica-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: local('Futura-Bold'), url('./assets/fonts/Helvetica-Font/Helvetica.ttf') format('truetype');
+    font-weight: normal;
+}
+
+body {
+    font-family: 'Futura', sans-serif;
+    overflow-x: hidden;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Global Colors */
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --lightGrey: #f5f5f5;
+    --grey: #7e7e7e;
+    --darkGrey: #111111;
+}

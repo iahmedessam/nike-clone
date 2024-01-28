@@ -1,0 +1,13 @@
+<section class="slider d-flex justify-content-center align-items-center">
+
+    <!-- Slider Content -->
+    <div class="d-flex justify-content-center align-items-center">
+        <p>{{offers[counter].text}}</p>
+        <a routerLink="">{{offers[counter].link}}</a>
+    </div>
+
+    <!-- Slider Arrows -->
+    <span class="arrowLeft" (click)="back()"></span>
+    <span class="arrowRight" (click)="forward()"></span>
+
+</section>
